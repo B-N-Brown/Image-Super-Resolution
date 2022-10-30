@@ -20,7 +20,7 @@ def addResidualBlock(x, kernel_size, filters):
 
 class GenNet:
     def __init__(self, x): # takes x as number of residual blocks
-        lowres_h, lowres_w = 52, 52
+        lowres_h, lowres_w = 256, 256
         self.build_model(x, lowres_h, lowres_w)
 
     def build_model(self, x, h, w):
